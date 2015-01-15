@@ -256,7 +256,7 @@
     <elseif><equals arg1="${host.fstype}" arg2="WINNT" />
       <then>
         <log message="Creating Drupal default files directory" level="verbose" />
-          <exec command="mkdir ${project.drupal.public.dir}" dir="${project.dir.src}" />
+          <exec command="mkdir &quot;${project.drupal.public.dir}&quot;" dir="${project.dir.src}" />
 
         <log message="Creating Drupal private files directory" level="verbose" />
           <exec command="mkdir &quot;${project.drupal.private.dir}&quot;" dir="${project.dir.src}" />
